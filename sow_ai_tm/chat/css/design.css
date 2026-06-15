@@ -1,0 +1,734 @@
+@charset "utf-8";
+@media print{
+	#photarea{
+        display: none;
+	}
+	#illustarea{
+        display: none;
+	}
+	#programarea{
+        display: none;
+	}
+	#head_area{
+        display: none;
+	}
+	#play_set{
+        display: none;
+    }
+	#riyochui{
+        display: none;
+    }
+	#prtbtn1{
+        display: none;
+    }
+	#prtbtn2{
+        display: none;
+    }
+}
+body header {
+    width: 100%;
+    height: 135px;
+    border-top: 4px solid #7089FF;
+}
+#hderArea {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+#hderArea h1 {
+    float: left;
+    height: auto;
+}
+
+body header nav {
+    float: left;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+#hderArea nav ul {
+    width: 100%;
+    padding: 0px;
+    height: 20px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+#hderArea nav ul li {
+    width: 100px;
+    height: 20px;
+    float: left;
+    text-align: center;
+}
+/*メニューバーの色*/
+.navbar-nav.mx-auto .nav-item .nav-link {
+	color: #3284ba;
+}
+.navbar-nav.mx-auto .nav-item .nav-link:hover {
+	color: #0f5b8c;
+}
+.navbar-nav.mx-auto .nav-item.dropdown .LinkColor_yellow {
+	color: #FFB300;
+}
+.navbar-nav.mx-auto .nav-item.dropdown .LinkColor_yellow:hover {
+	color: #AA7700;
+}
+.navbar-nav.mx-auto .nav-item.dropdown .LinkColor_purple {
+	color: #BE00D6;
+}
+.navbar-nav.mx-auto .nav-item.dropdown .LinkColor_purple:hover {
+	color: #760085;
+}
+
+.riyokaisi{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 20px;   /* 余白       */
+  margin       : 0px 20px;   /* 余白       */
+  background    : #ffee00;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.row .col-sm-9 a {
+  text-decoration: none;
+}
+.sendbtn{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 30px;   /* 余白       */
+  margin       : 0px 5px;   /* 余白       */
+  background    : #95dedd;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 1px solid #9e9e9e;    /* 枠の指定 */
+}
+
+.dispinfo{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  padding       : 8px 30px;   /* 余白       */
+  margin       : 0px 5px;   /* 余白       */
+  background    : #ece1c9;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 1px solid #9e9e9e;    /* 枠の指定 */
+}
+
+.m_area{
+	overflow-y: auto;
+	/*font-size: 10pt;*/
+}
+
+textarea {
+  resize: none;
+  width:175px;
+  height:300px;
+}
+
+.textarea_kinsi {
+	border: 2px solid #218a3f;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #dbffe5;  /* 背景色 */
+    width: 175px;            /* 横幅 */
+    height: 160px;           /* 高さ */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.textarea_toroku{
+	border: 2px solid #1c0f91;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #cfc9ff;  /* 背景色 */
+    width: 175px;            /* 横幅 */
+    height: 160px;           /* 高さ */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.textarea_group {
+	border: 2px solid #aca7db;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #d7d5e8;  /* 背景色 */
+    width: 175px;            /* 横幅 */
+    height: 120px;           /* 高さ */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+/* safariの場合 */
+_::-webkit-full-page-media,_:future,:root .textarea_group{
+	height: 30px;           /* 高さ */
+}
+
+.textarea_seitono {
+	border: 2px solid #ffcb36;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #fff7e0;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.textarea_message {
+	border: 2px solid #949494;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #ebebeb;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+	margin       : 10px 0px;   /* 余白       */
+}
+
+.textarea_seitoname {
+	border: 2px solid #38dfff;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #e6fbff;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.select_group {
+	border: 1px solid #000000;  /* 枠線 */
+    padding: 0.1em;          /* 内側の余白量 */
+    background-color: #FFFFFF;  /* 背景色 */
+    width: 150px;            /* 横幅 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+.select_prompt {
+	border: 1px solid #000000;  /* 枠線 */
+    padding: 0.1em;          /* 内側の余白量 */
+    background-color: #FFFFFF;  /* 背景色 */
+    width: 180px;            /* 横幅 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+
+.logarea {
+	background-color: #e6fbff;  /* 背景色 */
+	width: 100%;
+	height: 450px;
+}
+
+.padd10 {
+  padding: 10px;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.upload_back {
+	border: 4px solid #C6FFDB;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #ffffff;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+.illust_back{
+	border: 4px solid #C6FFDB;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */	
+    padding: 0em 2em;          /* 内側の余白量 */
+    background-color: #ffffff;  /* 背景色 */
+}
+.psizew img{
+	width: 25px;
+}
+.psizeh img{
+	height: 25px;
+}
+.modal { /* covers the main window */
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    overflow: auto;
+    background-color:rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modalWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(215, 220, 223);
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  }
+  .modalFooter {
+    text-align: right;  /* cancel button at the right corner */
+  }
+  .modalWindow ul {
+    list-style: none;  /* no bullet */
+  }
+  .modalWindow a {
+    text-decoration: none;  /* no underline */
+    cursor: pointer;  /* pointer even for anchors without href */
+    color: #48f;
+  }
+
+.wrap{vertical-align: top;}
+
+ /*印刷対象外クラスのスタイル*/
+ .no_print{
+ 	display: none;
+ }
+
+ /*吹き出し*/
+.mode_send{
+	text-align: right;
+
+}
+.mode_recieve{
+	text-align: left;
+}
+.fuki-left {
+  position: relative;
+  display: inline-block;
+  margin: 0em 0 0.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+}
+.fuki-left p {
+  margin: 0;
+  padding: 0;
+}
+.fuki-right {
+  position: relative;
+  display: inline-block;
+  margin: 0em 15px 0.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  background: #8ad19c;
+  border-radius: 15px;
+}
+.fuki-right p {
+  margin: 0;
+  padding: 0;
+}
+
+ /*吹き出し表示の背景色*/
+.backcolor-default{
+	background-color: #fafaa2;
+}
+
+.backcolor-message{
+	background-color: #d1ecff;
+	margin-top: 5px;
+}
+
+.backcolor_upload{
+	background-color: #ceffcd;
+  border: 1px solid #64c769;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px;
+}
+.backcolor_print{
+	background-color: #eee3ff;
+  border: 1px solid #9a86b8;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.tanto_title {
+	color: #000000;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #ffa58c;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+.tanto_title:before {
+  content: '●';
+  color: white;
+  margin-right: 0px;
+}
+
+.btn-gradient-radius-client {
+  display: inline-block;
+  padding: 20px 80px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #2cb5db 0%, #7ae2ff 100%);
+  transition: .4s;
+}
+.btn-gradient-radius-server {
+  display: inline-block;
+  padding: 20px 80px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #4bbf2e 0%, #7fe665 100%);
+  transition: .4s;
+}
+
+.t_center{
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.t_v_center{
+  display: flex;         /* Flexbox を有効化 */
+  justify-content: center;     /* 横方向の中央揃え */
+	align-items: center;    /* 縦の中央揃え */
+}
+
+.modetitle {
+    color: #555555;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.font_red{
+	color: #FF0000;
+}
+.color_red {
+    color: #ff0000;
+}
+.fontbold {
+    font-weight: bold;
+}
+.font16 {
+    font-size: 20px;
+}
+
+.text-height-5{
+    height: calc( 1.3em * 5 );
+    line-height: 1.3;
+	width: 80%;
+}
+.printbtn{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 20px;   /* 余白       */
+  margin       : 0px 20px;   /* 余白       */
+  background    : #2D6D9B;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #cccccc;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+  text-decoration: none;
+}
+.printwaku{
+	border: 1px solid #000000;
+}
+/*サーバからクライアントへメッセージ送信*/
+.s_c_textarea_seitono {
+	border: 2px solid #e6c0eb;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #fdebff;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+.s_c_textarea {
+	border: 2px solid #edc7ab;  /* 枠線 */
+    border-radius: 0.67em;   /* 角丸 */
+    padding: 0.5em;          /* 内側の余白量 */
+    background-color: #fce7d7;  /* 背景色 */
+    font-size: 1em;          /* 文字サイズ */
+    line-height: 1.2;        /* 行の高さ */
+}
+.s_c_send{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 20px;   /* 余白       */
+  margin       : 0px 20px;   /* 余白       */
+  background    : #84e39f;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #57b371;    /* 枠の指定 */
+}
+.s_c_cancel{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 20px;   /* 余白       */
+  margin       : 0px 20px;   /* 余白       */
+  background    : #d8f2df;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #57b371;    /* 枠の指定 */
+}
+
+.ImgBox{
+  width: 25px;
+  height: 25px;
+}
+.ImgBox-Img{
+  transition-duration: 0.1s;
+}
+.ImgBox-Img:hover{
+  transform: scale(2.5);
+  transition-duration: 0.1s;
+}
+.read_label{
+	cursor: pointer;
+}
+
+/*ComboBox*/
+.select {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000066;
+  border-radius: 0.3em;
+  background-color: #d4feff;
+  color: #000000;
+  font-size: 12px;
+  margin 	: 0px 0px 5px 0px;   /* 余白       */
+}
+.selectpara {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #000066;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  margin 	: 0px 0px 5px 0px;   /* 余白       */
+}
+.selectgroup {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000066;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12px;
+  margin 	: 0px 0px 5px 0px;   /* 余白       */
+}
+/*更新ボタン*/
+.updatebtn{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 8px 20px;   /* 余白       */
+  margin       : 0px 20px 10px 20px;   /* 余白       */
+  background    : #ffee00;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+/*Deleteボタン*/
+.deletebtn{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 5px;   /* 余白       */
+  margin       : 10px 20px 10px 20px;   /* 余白       */
+  background    : #cfffd3;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #18701e;    /* 枠の指定 */
+}
+
+/*汎用ボタン*/
+.publicbtn{
+  display       : inline-block;
+  border-radius: 0.67em;   /* 角丸 */
+  font-size     : 10pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 6px 15px;   /* 余白       */
+  margin       : 0px 20px 10px 20px;   /* 余白       */
+  background    : #def8ff;     /* 背景色     */
+  color         : #000000;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 1px solid #000066;    /* 枠の指定 */
+}
+#parablock_fulltime{
+  margin 	: 10px 0px 0px 0px;   /* 余白       */
+}
+/**/
+.paratitle {
+  position: relative;
+  padding: 0.5rem 3.5rem;
+}
+
+.paratitle:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
+}
+.read_label{
+	cursor: pointer;
+}
+.netnoip{
+	width: 50px;
+}
+
+.col-md-8{
+	padding-right: 1px;
+	padding-left: 1px;
+}
+.col-md-4{
+	padding-right: 5px;
+	padding-left: 1px;
+}
+.col-md-6{
+	padding-right: 1px;
+	padding-left: 1px;
+}
+.col-md-2{
+	padding-right: 1px;
+	padding-left: 5px;
+}
+
+.separator {
+  display: inline-block;
+  width: 2px;
+  height: 40px; /* 高さを調整 */
+  background-color: #ccc; /* 色を指定 */
+  margin: 0 10px; /* 間隔を調整 */
+}
+
+/*TeachableMachine ここから*/
+.result-text {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre; /* 空白もそのまま表示 */
+}
+/* 見出し行／データ行を横並びに */
+.header-row,
+.result-row {
+  display: flex;
+  padding: 4px 0;
+}
+
+/* 左側（クラス名）は可変幅で左寄せ */
+.header-row span:first-child,
+.result-row span:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+/* 右側（値）は固定幅で右寄せ */
+.header-row span:last-child,
+.result-row span:last-child {
+  width: 6em;       /* 必要に応じ調整 */
+  text-align: right;
+}
+
+/* 見出しは太字＆下線 */
+.header-row {
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+/*TeachableMachine ここまで*/
+
+/* カメラ開始 */
+.formbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 17px;
+  /*font-weight: bold;*/
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.camerabutton {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  width: 320px;
+}
+/* TeachableMachineなどのボタン */
+.studybuttonColor {
+  color: #fff;
+  background: linear-gradient(135deg, #53d847, #439c3b);
+}
+.etcbuttonColor {
+  color: #fff;
+  background: linear-gradient(135deg, #53d847, #439c3b);
+}
+.etcbuttonColor2 {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #495db4);
+}
+/*クラスの学習ボタンの大きさ*/
+.studybutton{
+  width: 200px;
+  height: 100px;
+}
+.studystartbutton{
+  width: 200px;
+  height: 70px;
+}
+.train-buttons{
+  display: flex;
+  flex-direction: column;   /* 縦並び */
+  gap: 40px;                /* ボタン間の余白 */
+  align-items: center;      /* 中央寄せ（不要なら消してOK） */
+}
+
+/*スタンプの画像*/
+.illust-img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.ImgBox {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}

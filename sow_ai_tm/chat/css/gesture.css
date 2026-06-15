@@ -1,0 +1,41 @@
+#gesture .row {
+	display:flex;
+	gap:16px;
+	flex-wrap:wrap;
+	align-items:flex-start;
+}
+
+canvas#overlay {
+	max-width: 320px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+video#cam {
+	display:none;
+}
+
+#gesture button {
+	cursor:pointer;
+}
+
+pre#log {
+	background:#f6f6f6;
+	padding:10px;
+	border-radius:8px;
+	max-height:300px;
+	overflow:auto;
+}
+
+.label {
+	font-weight:600;
+}
+
+#live { 
+    white-space: pre-line; /* 改行(\n)を行として表示 */
+    display: block;        /* spanでもブロック表示に */
+}
+
+#liveClass > div[hidden] { display: none; }
+

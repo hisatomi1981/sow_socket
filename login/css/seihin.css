@@ -1,0 +1,245 @@
+.seihinwaku {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.container .seihinwaku .seihintitle {
+    color: #777777;
+    font-size: 1em;
+}
+
+.container .seihinwaku .seihinkataban {
+    color: #555555;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.watitle{
+	color: #364e96;/*文字色*/
+	padding: 0.5em 0;/*上下の余白*/
+	border-top: solid 3px #364e96;/*上線*/
+	border-bottom: solid 3px #364e96;/*下線*/
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+.btn-menu-radius {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(45deg, #97a4db 0%, #6875ad 100%);
+    transition: .4s;
+  border: none;
+}
+
+/*6つの設定*/
+.btn-menu-radius-setup {
+  display: inline-block;
+  padding: 5px 0px;
+  margin: 20px 0px;
+  border-radius: 30px;
+  width: 600px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-image: linear-gradient(45deg, #e07777 0%, #cf2323 100%);
+  transition: .4s;
+}
+
+/*時刻設定ボタン*/
+.btn_timeajust {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #438d83 0%, #438d83 100%);
+    transition: .4s;
+    border: none;
+  }
+.btn_timeajust:hover {
+    background-image: linear-gradient(45deg, #7ecfc9 0%, #7ecfc9 100%);
+}
+
+/*レポートボタン*/
+.btn_report {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 80px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #b36d45 0%, #b36d45 100%);
+    transition: .4s;
+    border: none;
+  }
+.btn_report:hover {
+    background-image: linear-gradient(45deg, #7ecfc9 0%, #7ecfc9 100%);
+}
+
+/*管理システムボタン*/
+.btn_menu_manage {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 80px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #c984c0 0%, #c984c0 100%);
+    transition: .4s;
+    border: none;
+  }
+.btn_menu_manage:hover {
+    background-image: linear-gradient(45deg, #7ecfc9 0%, #7ecfc9 100%);
+}
+
+/*管理者用ボタン*/
+.btn-admin-radius {
+  display: inline-block;
+  padding: 5px 0px;
+  border-radius: 30px;
+  width: 250px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #edbc66 0%, #edbc66 100%);
+  transition: .4s;
+  border: none;
+  outline: none;
+}
+.btn-admin-radius:hover {
+  background-image: linear-gradient(45deg, #7ecfc9 0%, #7ecfc9 100%);
+}
+.btn-admin-radius_ipad {
+  display: inline-block;
+  padding: 5px 0px;
+  border-radius: 30px;
+  width: 250px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #438d83 0%, #438d83 100%);
+  transition: .4s;
+  border: none;
+  outline: none;
+}
+.btn-admin-radius_ipad:hover {
+  background-image: linear-gradient(45deg, #7ecfc9 0%, #7ecfc9 100%);
+}
+
+/*クライアント、サーバボタン*/
+.btn_menu_server {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 100px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #63b967 0%, #63b967 100%);
+    transition: .4s;
+    border: none;
+}
+.btn_menu_server:hover {
+    background-image: linear-gradient(45deg, #05791e 0%, #05791e 100%);
+}
+.btn_menu_client {
+    display: inline-block;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 100px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #5c7cd3 0%, #5c7cd3 100%);
+    transition: .4s;
+    border: none;
+}
+.btn_menu_client:hover {
+    background-image: linear-gradient(45deg, #55499b 0%, #55499b 100%);
+}
+
+/*資料のページボタン*/
+.btn-menu-radius-document {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #015dac;
+  background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+.btn-menu-radius-document_t {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #01ac57;
+  background-image: radial-gradient(#08be63 13%, transparent 13%), radial-gradient(#08be63 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+.btn_etc {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 10px 0px;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #46cfc4;
+    transition: .4s;
+    border: none;
+}
+.btn_back {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 10px 0px;;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #466bcf;
+    transition: .4s;
+    border: none;
+}
+
+.font_color_white{
+	color: #ffffff;
+}
+
+.font_size_15{
+	font-size: 15pt;
+}
+
+.t_center{
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: #f4f4f4;/*背景色*/
+	border-left: solid 5px #7db4e6;/*左線*/
+	border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+h4:first-letter {
+  font-size: 150%;
+  color: #eb6100;
+}
+
+h5 {
+	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+	color: #494949;/*文字色*/
+	font-size: 15pt;
+	font-weight: bold;
+}

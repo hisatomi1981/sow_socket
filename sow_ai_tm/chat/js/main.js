@@ -3,8 +3,8 @@
 // ============================================================
 
 var supabaseClient = window.supabase.createClient(
-  'YOUR_SUPABASE_URL',   // ← Supabase の Project URL
-  'YOUR_ANON_KEY'        // ← Supabase の anon public key
+  'https://spdodhlxnklompnlwfgy.supabase.co',   // ← Supabase の Project URL
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwZG9kaGx4bmtsb21wbmx3Zmd5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk0MTcwMTAsImV4cCI6MjA1NDk5MzAxMH0.mzB0VSVguF19uAEfwr4QLGn6RkV3xO284d6bfs0aAZ4'        // ← Supabase の anon public key
 );
 
 var realtimeChannel = null;
